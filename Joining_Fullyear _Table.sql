@@ -1,0 +1,128 @@
+--Combining all five tables using UNION
+ -- Note: adjust query settings in BigQuery; For Destination, choose 'Set a destination table for query results'
+
+ SELECT 
+        ride_id, 
+        member_casual, 
+        started_at, 
+        ended_at, 
+	ride_length, 
+        ride_date,
+        ride_month,
+        ride_year,
+        start_time,
+        end_time,
+        day_of_week, 
+        start_station_name, 
+	start_station_id, 
+        end_station_name, 
+	end_station_id, 
+        start_lat, 
+        start_lng, 
+	end_lat, 
+        end_lng, 
+        rideable_type,
+        quarter
+FROM 
+        `divvy-tripdata-426901.2022_Tripdata_Q1.2022_Tripdata_Q1`
+UNION DISTINCT  
+SELECT 
+        ride_id, 
+        member_casual, 
+        started_at, 
+        ended_at, 
+	ride_length, 
+        ride_date,
+        ride_month,
+        ride_year,
+        start_time,
+        end_time,
+        day_of_week, 
+        start_station_name, 
+	start_station_id, 
+        end_station_name, 
+	end_station_id, 
+        start_lat, 
+        start_lng, 
+	end_lat, 
+        end_lng, 
+        rideable_type,
+        quarter
+FROM 
+         `divvy-tripdata-426901.2022_Tripdata_Q2.2022_Tripdata_Q2`
+UNION DISTINCT  
+SELECT 
+        ride_id, 
+        member_casual, 
+        started_at, 
+        ended_at, 
+	ride_length, 
+        ride_date,
+        ride_month,
+        ride_year,
+        start_time,
+        end_time,
+        day_of_week, 
+        start_station_name, 
+	start_station_id, 
+        end_station_name, 
+	end_station_id, 
+        start_lat, 
+        start_lng, 
+	end_lat, 
+        end_lng, 
+        rideable_type,
+        quarter
+FROM 
+         `divvy-tripdata-426901.2022_Tripdata_Q3.2022_Tripdata_Q3`
+UNION DISTINCT  
+SELECT 
+        ride_id, 
+        member_casual, 
+        started_at, 
+        ended_at, 
+	ride_length, 
+        ride_date,
+        ride_month,
+        ride_year,
+        start_time,
+        end_time,
+        day_of_week, 
+        start_station_name, 
+	start_station_id, 
+        end_station_name, 
+	end_station_id, 
+        start_lat, 
+        start_lng, 
+	end_lat, 
+        end_lng, 
+        rideable_type,
+        quarter
+FROM 
+         `divvy-tripdata-426901.2022_Tripdata_Q4.2022_Tripdata_Q4`
+UNION DISTINCT  
+SELECT 
+        ride_id, 
+        member_casual, 
+        started_at, 
+        ended_at, 
+	ride_length, 
+        ride_date,
+        ride_month,
+        ride_year,
+        start_time,
+        end_time,
+        day_of_week, 
+        start_station_name, 
+	start_station_id, 
+        end_station_name, 
+	end_station_id, 
+        start_lat, 
+        start_lng, 
+	end_lat, 
+        end_lng, 
+        rideable_type,
+        quarter
+FROM 
+         `divvy-tripdata-426901.2023_Tripdata_Q1.2023_Tripdata_Q1`
+ 

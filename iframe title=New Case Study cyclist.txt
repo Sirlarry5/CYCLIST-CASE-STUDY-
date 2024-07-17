@@ -1,0 +1,1 @@
+<iframe title="New Case Study cyclist" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c7d0426c-325a-4acb-844c-d83f6b812ef8&autoAuth=true&ctid=9d568c56-dbed-44fe-acc8-ff8d34b79e2e" frameborder="0" allowFullScreen="true"></iframe>
